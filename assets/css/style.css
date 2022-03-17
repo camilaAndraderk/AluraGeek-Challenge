@@ -1,0 +1,38 @@
+@import url(reset.css);
+@import url(logo.css);
+@import url(barra-pesquisa.css);
+
+:root{
+    --fundo-principal: #FFFFFF;
+}
+
+.loja{
+    display: grid;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 115px auto  auto;
+
+}
+
+.cabecalho{
+    display: flex;
+    width: 100%;
+    background: var(--fundo-principal);
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho__principal{
+    width: 80%;
+}
+
+.cabecalho__secao{
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: space-between;
+}
+

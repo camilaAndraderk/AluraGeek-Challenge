@@ -1,0 +1,25 @@
+.barra-pesquisa{
+    background: #F5F5F5;
+    width: 55%;
+    display: flex;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.barra-pesquisa__input{
+    border: none;
+    background: transparent;
+    color: #A2A2A2;
+    width: calc(100% - 23px);
+}
+
+.barra-pesquisa__botao{
+    width: 23px;
+    background: transparent;
+    border: none;
+    padding: none;
+}
+
+.barra-pesquisa__botao:hover{
+    cursor: pointer;
+}

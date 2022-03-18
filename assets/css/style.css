@@ -1,28 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(reset.css);
+@import url(padrao.css);
 @import url(banner.css);
 @import url(barra-pesquisa.css);
 @import url(botao.css);
 @import url(index.css);
 @import url(logo.css);
 @import url(produtos.css);
-@import url(reset.css);
+
+
+html{
+    font-size: 10px;
+}
 
 :root{
     --fundo-principal: #FDFDFD;
     --cor-branco-principal: #FDFDFD;
     --cor-hover-branco: #F5F5F5;
     --cor-azul-principal: #2A7AE4;
-    --cor-hover-azul: #1553a4;
-}
-
-*,
-a{
-    color: #464646;
-    font-family: 'Raleway', sans-serif;
-}
-
-html{
-    font-size: 10px;
+    --cor-hover-azul: #1962c2;
+    --espaco-entre-produtos: 1rem;
 }
 
 .loja{
@@ -63,4 +60,8 @@ html{
     grid-template-columns: 100%;
     width: 100vw;
     height: auto; 
+}
+
+.footer{
+    background: #EAF2FD;
 }

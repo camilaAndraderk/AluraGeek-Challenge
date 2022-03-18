@@ -1,3 +1,5 @@
+/*
+Botões:
 .botao1,
 .botao1--azul1,
 .botao1--azul2,
@@ -5,20 +7,16 @@
 .botao2,
 .botao2--azul1,
 .botao2--azul2,
-.botao2--azul3{
+.botao2--azul3*/
+
+.botao{ 
     padding-left: 35px;
     padding-right: 35px;
     transition: transform .15s;
 }
 
-.botao1:hover,
-.botao1--azul1:hover,
-.botao1--azul2:hover,
-.botao1--azul3:hover,
-.botao2:hover,
-.botao2--azul1:hover,
-.botao2--azul2:hover,
-.botao2--azul3:hover{
+
+.botao:hover{
     transform: scale(1.05);
 }
 

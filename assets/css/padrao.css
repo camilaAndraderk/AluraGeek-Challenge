@@ -1,0 +1,13 @@
+*,
+a{
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    color: var(--cor-azul-principal);
+}
+
+a:hover:not(.botao){
+    color: var(--cor-hover-azul);
+}

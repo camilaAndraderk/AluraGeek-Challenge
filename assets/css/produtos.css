@@ -1,8 +1,8 @@
 .produtos{
-    padding: 30px 100px;
+    padding: 5% 8%;
 }
 
-.produtos__secao{
+.produtos__secao:not(:last-child){
     margin-bottom: 6rem;
 }
 

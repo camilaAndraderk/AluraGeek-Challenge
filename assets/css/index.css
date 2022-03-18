@@ -1,0 +1,6 @@
+.conteudo{
+    grid-template-areas: 
+        "banner"
+        "produtos";
+    grid-template-rows: 352px auto;
+}

@@ -1,0 +1,32 @@
+.banner{
+    grid-area: banner;
+    background: url(../img/Hero-banner.png) center / cover no-repeat;
+    position: relative;
+}
+
+.banner__conteudo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translateX(-50%);
+    height: 150px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner__titulo,
+.banner__subtitulo{
+    color: var(--cor-branco-principal);
+    font-weight: 700;
+}
+
+.banner__titulo{
+    font-size: 5.2rem;
+}
+
+.banner__subtitulo{
+    font-size: 2.2rem;
+}

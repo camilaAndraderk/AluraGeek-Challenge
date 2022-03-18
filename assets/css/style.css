@@ -1,9 +1,28 @@
-@import url(reset.css);
-@import url(logo.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(banner.css);
 @import url(barra-pesquisa.css);
+@import url(botao.css);
+@import url(index.css);
+@import url(logo.css);
+@import url(produtos.css);
+@import url(reset.css);
 
 :root{
-    --fundo-principal: #FFFFFF;
+    --fundo-principal: #FDFDFD;
+    --cor-branco-principal: #FDFDFD;
+    --cor-hover-branco: #F5F5F5;
+    --cor-azul-principal: #2A7AE4;
+    --cor-hover-azul: #1553a4;
+}
+
+*,
+a{
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    font-size: 10px;
 }
 
 .loja{
@@ -13,7 +32,7 @@
         "conteudo"
         "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 115px auto  auto;
+    grid-template-rows: 75px auto  auto;
 
 }
 
@@ -27,6 +46,9 @@
 
 .cabecalho__principal{
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .cabecalho__secao{
@@ -36,3 +58,9 @@
     justify-content: space-between;
 }
 
+.conteudo{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100vw;
+    height: auto; 
+}

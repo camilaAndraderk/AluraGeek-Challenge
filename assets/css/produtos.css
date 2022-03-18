@@ -1,0 +1,8 @@
+.produtos{
+    padding: 30px 100px;
+}
+
+.produtos__secao__cabecalho{
+    display: flex;
+    justify-content: space-between;
+}

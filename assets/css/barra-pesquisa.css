@@ -9,8 +9,11 @@
 .barra-pesquisa__input{
     border: none;
     background: transparent;
-    color: #A2A2A2;
     width: calc(100% - 23px);
+}
+
+.barra-pesquisa__input:focus{
+    outline: none;
 }
 
 .barra-pesquisa__botao{

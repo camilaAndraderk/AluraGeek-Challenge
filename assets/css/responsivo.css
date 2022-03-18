@@ -1,0 +1,11 @@
+@media (max-width: 768px){
+    .produtos__item{
+        width: calc(25% - var(--espaco-entre-produtos));
+    }
+}
+
+@media (max-width: 360px){
+    .produtos__item{
+        width: calc(50% - var(--espaco-entre-produtos));
+    }
+}

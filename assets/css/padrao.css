@@ -1,6 +1,8 @@
 *,
-a{
-    color: #464646;
+a,
+p,
+label{
+    color: var(--cor-fonte-principal);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -8,6 +10,6 @@ a{
     color: var(--cor-azul-principal);
 }
 
-a:hover:not(.botao){
+a:hover:not(.botao):not(.links-importantes__link){
     color: var(--cor-hover-azul);
 }

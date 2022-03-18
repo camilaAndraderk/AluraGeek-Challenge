@@ -1,0 +1,35 @@
+
+.fale-conosco__titulo{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.fale-conosco__label{
+    width: 100%;
+    background: #FFF;
+    border-radius: 4px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 40px;
+    margin: 1rem 0 2rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-bottom: 1.5px solid #CCC;
+    box-sizing: border-box;
+}
+
+.fale-conosco__input{
+    width: 99%;
+    max-width: 99%;
+    border: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.fale-conosco__input:focus{
+    outline: none;
+}

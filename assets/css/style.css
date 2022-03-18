@@ -4,7 +4,9 @@
 @import url(banner.css);
 @import url(barra-pesquisa.css);
 @import url(botao.css);
+@import url(fale-conosco.css);
 @import url(index.css);
+@import url(links-importantes.css);
 @import url(logo.css);
 @import url(produtos.css);
 
@@ -16,6 +18,7 @@ html{
 :root{
     --fundo-principal: #FDFDFD;
     --cor-branco-principal: #FDFDFD;
+    --cor-fonte-principal: #464646;
     --cor-hover-branco: #F5F5F5;
     --cor-azul-principal: #2A7AE4;
     --cor-hover-azul: #1962c2;
@@ -62,6 +65,30 @@ html{
     height: auto; 
 }
 
-.footer{
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
     background: #EAF2FD;
+    
+}
+.rodape-principal{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: auto;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+
+.sobre-autor{
+    background: var(--cor-branco-principal);
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 30px 0;
+    width: 100%;
+    line-height: 2rem;
 }

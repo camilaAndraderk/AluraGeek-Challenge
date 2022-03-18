@@ -45,9 +45,12 @@
     grid-template-rows: auto auto;
     /* width: 176px; */
     width: calc(16.66% - var(--espaco-entre-produtos));
-    margin-right: var(--espaco-entre-produtos);
     grid-row-gap: 1rem;
     transition: transform .1s;
+}
+
+.produtos__item:not(:last-child){
+    margin-right: var(--espaco-entre-produtos);
 }
 
 .produtos__item:hover{

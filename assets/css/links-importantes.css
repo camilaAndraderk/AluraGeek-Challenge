@@ -1,0 +1,14 @@
+.links-importantes__item{
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    
+}
+
+.links-importantes__link{
+    color: var(--cor-fonte-principal);
+}
+
+.links-importantes__link:hover{
+    color: #656565;
+}

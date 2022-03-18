@@ -45,6 +45,7 @@ Botões:
 .botao2--azul1,
 .botao2--azul2{
     color: var(--cor-branco-principal);
+    border: none;
 }
 
 .botao1,

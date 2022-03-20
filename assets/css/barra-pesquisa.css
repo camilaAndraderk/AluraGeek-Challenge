@@ -39,4 +39,43 @@
     font-weight: bold;
 }
 
+@keyframes pesquisa-abrindo {
+    to{
+        width: 92%;
+    }
+}
 
+@keyframes pesquisa-fechando {
+    0%{
+        width: 92%;
+    }
+    99%{
+        width: 12%;
+    }
+    100%{
+        display: none;
+    }
+}
+
+/* 
+@keyframes pesquisa-abrindo {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes pesquisa-fechando {
+    0%{
+        transform: scaleX(1);
+    }
+    99%{
+        transform: scaleX(0);
+    }
+    100%{
+        display: none;
+    }
+}
+*/

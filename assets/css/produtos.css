@@ -59,6 +59,10 @@
     cursor: pointer;
 }
 
+.produtos__item:hover .produtos__img{
+    box-shadow: 1px 1px 4px 2px #aaa;
+}
+
 .produtos__cabecalho{
     grid-area: cabecalho-item;
     width: 100%;

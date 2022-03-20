@@ -1,19 +1,28 @@
 @media (max-width: 1000px){
-    .cabecalho-principal{
-        width: 95%;
+    .cabecalho__principal{
+        width: 90%;
     }
 
     .cabecalho__secao{
         width: 70%;
     }
 
-    .rodape-principal{
+    .rodape__principal{
         width: 90%;
     }
 }
 
 
 @media (max-width: 768px){
+    .logo{
+        transform: scale(.7) translateX(-18%);
+        margin-right: 0;
+    }
+
+    .barra-pesquisa{
+        margin-right: 10%;
+    }
+
     .produtos{
         padding: 5% 4% 0;
     }
@@ -31,14 +40,14 @@
         margin-right: 0;
     }
 
-    .rodape-principal {
+    .rodape__principal {
         width: 85%;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 20% 80%;
         grid-column-gap: 1rem;
     }
 
-    .rodape-principal .logo{
+    .rodape__principal .logo{
         grid-column: 1 / 1;
         grid-row: 1 / 1;
     }
@@ -58,8 +67,101 @@
     }
 }
 
+@media (max-width: 500px){
+    .cabecalho__principal{
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 130px auto auto;
+        width: 85%;
+        position: relative;
+    }
+
+    .cabecalho__principal  .logo{
+        margin-right: 0;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .barra-pesquisa{
+        /* width: 0; */
+        /* display: none; */
+    }
+
+
+    .barra-pesquisa{
+        display: none;
+        left: 92%;
+        transform: translateX(-100%);
+        box-sizing: border-box;
+        position: absolute;
+        /* display: flex; */
+        height: 50px;
+    }
+
+    
+    .cabecalho__principal .botao{
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .lupa-individual{
+        display: flex;
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+
+    .lupa-individual__lupa{
+        display: block;
+    }
+
+    .lupa-individual__fechar{
+        display: none;
+    }
+
+    .barra-pesquisa--abrir{
+        display: flex;
+        animation: pesquisa-abrindo 1s forwards;
+    }
+
+    .barra-pesquisa--fechar{
+        display: flex;
+        animation: pesquisa-fechando 1s forwards;  
+    }
+
+    .barra-pesquisa--fechada{
+        display: none;
+    }
+}
+
 @media (max-width: 360px){
+
     .produtos__item{
         width: calc(50% - var(--espaco-entre-produtos));
+        margin-right: var(--espaco-entre-produtos);
+    }
+    
+    .produtos__item:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+@keyframes pesquisa-abrindo {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 92%;
+    }
+}
+
+@keyframes pesquisa-fechando {
+    0%{
+        width: 92%;
+    }
+    99%{
+        width: 12%;
+    }
+    100%{
+        display: none;
     }
 }

@@ -1,6 +1,7 @@
 .barra-pesquisa{
     background: #F5F5F5;
     width: 80%;
+    margin-right: 25%;
     display: flex;
     padding: 8px 16px;
     border-radius: 20px;
@@ -26,3 +27,16 @@
 .barra-pesquisa__botao:hover{
     cursor: pointer;
 }
+
+.lupa-individual,
+.lupa-individual__lupa,
+.lupa-individual__fechar{
+    display: none;
+}
+
+.lupa-individual__fechar{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+

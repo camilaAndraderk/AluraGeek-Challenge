@@ -1,11 +1,26 @@
 .barra-pesquisa{
     background: #F5F5F5;
-    width: 80%;
+    width: 45%;
     margin-right: 25%;
     display: flex;
     padding: 8px 16px;
     border-radius: 20px;
 }
+/* 
+-- contém também no arquivo responsivo para que funcione em cascata
+.barra-pesquisa--abrir{
+    display: flex;
+    animation: pesquisa-abrindo 1s ease-out forwards;
+}
+
+.barra-pesquisa--fechar{
+    display: flex;
+    animation: pesquisa-fechando 1s ease-out forwards;  
+}
+
+.barra-pesquisa--fechada{
+    display: none;
+} */
 
 .barra-pesquisa__input{
     border: none;
@@ -57,25 +72,3 @@
     }
 }
 
-/* 
-@keyframes pesquisa-abrindo {
-    0%{
-        transform: scaleX(0);
-    }
-    100%{
-        transform: scaleX(1);
-    }
-}
-
-@keyframes pesquisa-fechando {
-    0%{
-        transform: scaleX(1);
-    }
-    99%{
-        transform: scaleX(0);
-    }
-    100%{
-        display: none;
-    }
-}
-*/

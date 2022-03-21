@@ -1,6 +1,6 @@
 .banner{
     grid-area: banner;
-    background: url(../img/Hero-banner.png) center / cover no-repeat;
+    background: url(../img/banner-desktop.png) center / cover no-repeat;
     position: relative;
 }
 

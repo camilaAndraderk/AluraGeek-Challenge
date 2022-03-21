@@ -1,5 +1,9 @@
+
+.links-importantes{
+    line-height: 4rem;
+}
+
 .links-importantes__item{
-    margin-bottom: 3rem;
     font-size: 1.6rem;
     font-weight: 500;
     

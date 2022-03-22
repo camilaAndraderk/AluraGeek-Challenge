@@ -82,6 +82,13 @@
     textarea.fale-conosco__input{
         height: 112px;
     }
+
+    /* - login - */
+    .login{
+        text-align: left;
+        align-items: center;
+        width: 50%;
+    }
 }
 
 @media (max-width: 500px){
@@ -205,5 +212,10 @@
     
     .produtos__item:nth-child(2n){
         margin-right: 0;
+    }
+
+    /* - login - */
+    .login{
+        width: 80%;
     }
 }

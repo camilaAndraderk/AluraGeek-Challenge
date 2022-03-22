@@ -8,6 +8,7 @@
 @import url(links-importantes.css);
 @import url(logo.css);
 @import url(produtos.css);
+@import url(input.css);
 
 
 
@@ -63,8 +64,8 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
-    justify-content: center;
     background: #EAF2FD;
 }
 

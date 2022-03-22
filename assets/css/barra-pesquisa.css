@@ -5,22 +5,7 @@
     display: flex;
     padding: 8px 16px;
     border-radius: 20px;
-}
-/* 
--- contém também no arquivo responsivo para que funcione em cascata
-.barra-pesquisa--abrir{
-    display: flex;
-    animation: pesquisa-abrindo 1s ease-out forwards;
-}
-
-.barra-pesquisa--fechar{
-    display: flex;
-    animation: pesquisa-fechando 1s ease-out forwards;  
-}
-
-.barra-pesquisa--fechada{
-    display: none;
-} */
+} 
 
 .barra-pesquisa__input{
     border: none;

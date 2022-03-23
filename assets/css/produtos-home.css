@@ -52,7 +52,6 @@
 
     .botao:hover{
         transform: scale(.85);
-        transform-origin: right;  
     }
 }
 

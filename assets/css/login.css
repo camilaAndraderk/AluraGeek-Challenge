@@ -1,5 +1,5 @@
 .conteudo{
-    background-color: #E5E5E5;
+    background-color: var(--cor-fundo-cinza);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,4 +17,19 @@
 
 .botao1--azul1{
     font-size: 1.8rem;
+}
+
+@media (max-width: 768px){
+    .login{
+        text-align: left;
+        align-items: center;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 360px){
+    .login{
+        width: 80%;
+    }
 }

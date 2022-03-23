@@ -1,5 +1,10 @@
+/*Estilização dos produtos*/
 .produtos{
     padding: 5% 8%;
+}
+
+.produtos__secao{
+    box-sizing: border-box;
 }
 
 .produtos__secao:not(:last-child){
@@ -44,12 +49,12 @@
         "conteudo-item";
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
-    width: calc(16.66% - var(--espaco-entre-produtos));
+    width: calc(16.66% - var(--espaco-entre-produtos) + var(--espaco-entre-produtos)/6);
     grid-row-gap: 1rem;
     transition: transform .1s;
 }
 
-.produtos__item:not(:last-child){
+.produtos__item:not(:nth-child(6n)){
     margin-right: var(--espaco-entre-produtos);
 }
 
@@ -65,6 +70,7 @@
 .produtos__cabecalho{
     grid-area: cabecalho-item;
     width: 100%;
+    position: relative;
 }
 
 .produtos__img{

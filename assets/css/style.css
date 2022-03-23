@@ -21,6 +21,7 @@ html{
     --cor-branco-principal: #FDFDFD;
     --cor-fonte-principal: #464646;
     --cor-hover-branco: #F5F5F5;
+    --cor-fundo-cinza: #F5F5F5;
     --cor-azul-principal: #2A7AE4;
     --cor-hover-azul: #1962c2;
     --espaco-entre-produtos: 1rem;
@@ -43,6 +44,7 @@ html{
     background: var(--fundo-principal);
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
     
 .cabecalho__principal{
@@ -58,6 +60,7 @@ html{
     grid-template-columns: 100%;
     width: 100vw;
     height: auto; 
+    box-sizing: border-box;
 }
     
 .rodape{
@@ -67,6 +70,7 @@ html{
     justify-content: flex-end;
     width: 100%;
     background: #EAF2FD;
+    box-sizing: border-box;
 }
 
 .rodape__principal{

@@ -24,7 +24,9 @@
     padding: none;
 }
 
-.barra-pesquisa__botao:hover{
+.barra-pesquisa__botao:hover,
+.lupa-individual__lupa:hover,
+.lupa-individual__fechar:hover{
     cursor: pointer;
 }
 

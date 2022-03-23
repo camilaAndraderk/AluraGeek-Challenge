@@ -14,7 +14,10 @@ export function criarCabecalho(){
                                     <img src="./assets/img/Vector-lupa.svg" alt="Lupa para pesquisar" class="barra-pesquisa__imagem" loading="lazy">
                                 </button>
                             </form>
-                            <a href="/login" class="botao botao2">Login</a>
+                            <div class="cabecalho__botao">
+                                <a href="/login" class="botao botao2 cabecalho__botao--login">Login</a>
+                                <a href="/login" class="botao botao2 cabecalho__botao--logout">Sair</a>
+                            </div>
                             <span class="lupa-individual">
                                 <img src="./assets/img/Vector-lupa-principal.svg" alt="Lupa de pesquisa" class="lupa-individual__lupa" loading="lazy">
                                 <p class="lupa-individual__fechar">X</p>

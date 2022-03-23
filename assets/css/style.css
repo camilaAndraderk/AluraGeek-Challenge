@@ -55,6 +55,14 @@ html{
     position: relative;
 }
 
+.cabecalho__botao:hover{
+    transform: scale(1.05);
+}
+
+.cabecalho__botao--login{
+    display: none;
+}
+
 .conteudo{
     display: grid;
     grid-template-columns: 100%;

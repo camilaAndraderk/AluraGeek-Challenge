@@ -49,6 +49,11 @@
         transform: scale(.8);
         transform-origin: right;  
     }
+
+    .botao:hover{
+        transform: scale(.85);
+        transform-origin: right;  
+    }
 }
 
 @media (max-width: 550px){

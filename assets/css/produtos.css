@@ -60,7 +60,6 @@
 
 .produtos__item:hover{
     transform: scale(1.03);
-    cursor: pointer;
 }
 
 .produtos__item:hover .produtos__img{

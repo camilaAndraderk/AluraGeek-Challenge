@@ -16,3 +16,25 @@
 .links-importantes__link:hover{
     color: #656565;
 }
+
+
+@media (max-width: 768px){
+
+    .links-importantes{
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+   
+}
+
+
+@media (max-width: 500px){
+    .links-importantes{
+        text-align: center;
+        grid-column: none;
+        grid-row: none;
+        margin-bottom: 3rem;
+    }
+
+}
+

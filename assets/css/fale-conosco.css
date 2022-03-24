@@ -33,3 +33,23 @@
 .fale-conosco__input:focus{
     outline: none;
 }
+
+@media (max-width: 768px){
+    .fale-conosco{
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+    }
+    
+    .fale-conosco__text-area{
+        height: 112px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .fale-conosco{
+        width: 100%;
+        grid-column: none;
+        grid-row: none;
+    }
+}

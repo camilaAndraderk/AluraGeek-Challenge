@@ -30,3 +30,45 @@
 .banner__subtitulo{
     font-size: 2.2rem;
 }
+
+
+@media (max-width: 768px){
+
+    .banner{
+        background: url(../img/banner-tablet.png) center / cover no-repeat;
+    }   
+
+    .banner__conteudo{
+        height: 130px;
+        top: 45%;
+    }
+
+    .banner__titulo{
+        font-size: 3.2rem;
+    }
+
+    .banner__subtitulo {
+        font-size: 1.5rem;
+    }
+   
+}
+
+
+@media (max-width: 500px){
+
+    .banner{
+        background: url(../img/banner-celular.png) center / cover no-repeat;
+    }
+
+    .banner__conteudo{
+        height: 110px;
+    }
+
+    .banner__titulo{
+        font-size: 2.2rem;
+    }
+
+    .banner__subtitulo {
+        font-size: 1.4rem;
+    }
+}

@@ -10,3 +10,11 @@
 .logo__titulo{
     display: flex;
 }
+
+
+@media (max-width: 768px){
+    .logo-principal{
+        transform: scale(.7) translateX(-18%);
+        margin-right: 0;
+    }
+}

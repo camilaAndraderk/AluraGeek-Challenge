@@ -60,3 +60,51 @@
     }
 }
 
+
+@media (max-width: 768px){
+    .barra-pesquisa{
+        margin-right: 10%;
+    }
+   
+}
+
+
+@media (max-width: 500px){
+    .barra-pesquisa{
+        display: none;
+        left: 92%; 
+        width: 0%;
+        transform: translateX(-100%); 
+        box-sizing: border-box;
+        position: absolute;
+        height: 50px;
+    }
+
+    .barra-pesquisa--abrir{
+        display: flex;
+        animation: pesquisa-abrindo 1s ease-out forwards;
+    }
+
+    .barra-pesquisa--fechar{
+        display: flex;
+        animation: pesquisa-fechando 1s ease-out forwards;  
+    }
+
+    .barra-pesquisa--fechada{
+        display: none;
+    }
+    
+    .lupa-individual{
+        display: flex;
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+    
+    .lupa-individual__lupa{
+        display: block;
+    }
+    
+    .lupa-individual__fechar{
+        display: none;
+    }
+}

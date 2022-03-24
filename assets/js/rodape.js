@@ -2,10 +2,10 @@ export function criarRodape(){
     const rodape = 
                     `<div class="rodape__principal">
                         <a href="./index.html" class="logo rodape__logo">
-                            <img src="./assets/img/Vector-logo.svg" alt="Logo da loja" class="logo__img" loading="lazy">
+                            <img src="../assets/img/Vector-logo.svg" alt="Logo da loja" class="logo__img" loading="lazy">
                             <h1 class="logo__titulo">
-                                <img src="./assets/img/AluraGeek-alura.svg" alt="Alura" class="logo__titulo__img" loading="lazy">
-                                <img src="./assets/img/AluraGeek-geek.svg" alt="Geek" class="logo__titulo__img" loading="lazy">
+                                <img src="../assets/img/AluraGeek-alura.svg" alt="Alura" class="logo__titulo__img" loading="lazy">
+                                <img src="../assets/img/AluraGeek-geek.svg" alt="Geek" class="logo__titulo__img" loading="lazy">
                             </h1>
                         </a>
 
@@ -37,7 +37,7 @@ export function criarRodape(){
                                 <input type="text" id="nome-pessoa" name="nome-pessoa" class="fale-conosco__input">
                             </label>
                             <label class="fale-conosco__label" for="mensagem-pessoa">Mensagem
-                                <textarea name="mensagem-pessoa" id="mensagem-pessoa" class="fale-conosco__input" rows="10"></textarea>
+                                <textarea name="mensagem-pessoa" id="mensagem-pessoa" class="fale-conosco__input fale-conosco__text-area" rows="10"></textarea>
                             </label>
                             <button class="botao botao2--azul1">Enviar Mensagem</button>
                         </form>

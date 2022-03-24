@@ -3,7 +3,7 @@ a,
 p,
 label{
     color: var(--cor-fonte-principal);
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 a{

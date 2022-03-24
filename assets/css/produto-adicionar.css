@@ -1,0 +1,28 @@
+.conteudo{
+    background-color: var(--cor-fundo-cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.novo-produto{
+    width: 30%;
+    display: grid;
+    grid-template-columns: 100%;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+
+.formulario-titulo{
+    font-size: 3.2rem;
+}
+
+@media (max-width: 768px){
+
+}
+
+
+@media (max-width: 360px){
+
+}

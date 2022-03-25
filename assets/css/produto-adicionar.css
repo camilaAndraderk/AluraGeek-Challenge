@@ -2,24 +2,35 @@
     background-color: var(--cor-fundo-cinza);
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 30vh;
 }
 
 .novo-produto{
-    width: 30%;
+    width: 50%;
     display: grid;
     grid-template-columns: 100%;
     box-sizing: border-box;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .formulario-titulo{
     font-size: 3.2rem;
 }
 
-@media (max-width: 768px){
+.insercao-foto__botao{
+    font-weight: 400;
+}
 
+
+@media (max-width: 1000px){
+    .novo-produto{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    .novo-produto{
+        width: 90%;
+    }
 }
 
 

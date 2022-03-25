@@ -1,4 +1,9 @@
 .conteudo{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100vw;
+    height: auto; 
+    box-sizing: border-box;
     grid-template-areas: 
         "banner"
         "produtos";

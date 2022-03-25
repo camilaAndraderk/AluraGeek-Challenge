@@ -8,6 +8,7 @@
 @import url(logo.css);
 @import url(produtos.css);
 @import url(input.css);
+@import url(insercao-foto.css);
 
 html{
     font-size: 10px;
@@ -23,6 +24,7 @@ html{
     --cor-fundo-cinza: #F5F5F5;
     --cor-azul-principal: #2A7AE4;
     --cor-hover-azul: #1962c2;
+    --cor-borda: #C8C8C8;
     --espaco-entre-produtos: 1rem;
     --padding-lateral-desktop: 8vw;
     --padding-lateral-tablet: 8vw;
@@ -62,14 +64,6 @@ html{
 
 .cabecalho__botao--logout{
     display: none;
-}
-
-.conteudo{
-    display: grid;
-    grid-template-columns: 100%;
-    width: 100vw;
-    height: auto; 
-    box-sizing: border-box;
 }
     
 .rodape{

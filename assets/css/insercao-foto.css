@@ -1,0 +1,79 @@
+.insercao-foto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    column-gap: 2rem;
+    height: 150px;
+    margin: 1rem 0 2rem;
+}
+
+.insercao-foto__input{
+    position: relative;
+    background: url(../img/Vector-img-icon.svg) no-repeat center 20%;
+    background-color: #FFFFFF;
+    border: 1px dashed var(--cor-borda);
+    width: 50%;
+    height: 100%;
+}
+
+.insercao-foto__input::after{
+    content: 'Arraste para adicionar uma imagem para o produto';
+    text-align: center;
+    padding: 0 10%;
+    line-height: 2rem;
+    position: absolute;
+    top: 50%;
+    width: calc(100% - 20%);
+    font-size: 1.4rem;
+}
+
+.insercao-foto__texto{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.insercao-foto__botao{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.insercao-foto__botao::after{
+    content: "Procure no seu computador";
+}
+
+@media (max-width: 768px){
+    
+    .insercao-foto{
+        justify-content: flex-start;
+    }
+    
+    .insercao-foto__input{
+        width: 254px;
+    }
+    
+    .insercao-foto__botao::after{
+        content: "Procure no seu tablet";
+    }
+}
+
+
+@media (max-width: 500px){
+
+    .insercao-foto__input{
+        background: url(../img/Vector-icone-mais.svg) no-repeat center 20%;
+        background-color: #FFFFFF;
+        width: 100%;
+    }
+
+    .insercao-foto__input::after{
+        content: "Adicionar uma imagem para o produto";
+    }
+    .insercao-foto__texto,
+    .insercao-foto__botao{
+        display: none;
+    }
+
+
+}

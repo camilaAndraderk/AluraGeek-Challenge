@@ -32,12 +32,12 @@ export function criarRodape(){
 
                         <form class="fale-conosco">
                             <h class="fale-conosco__titulo">Fale conosco</h>
-                            <label class="fale-conosco__label" for="nome-pessoa">
+                            <label class="label-com-input__label" for="nome-pessoa">
                                 Nome
-                                <input type="text" id="nome-pessoa" name="nome-pessoa" class="fale-conosco__input">
+                                <input type="text" id="nome-pessoa" name="nome-pessoa" class="label-com-input__input">
                             </label>
-                            <label class="fale-conosco__label" for="mensagem-pessoa">Mensagem
-                                <textarea name="mensagem-pessoa" id="mensagem-pessoa" class="fale-conosco__input fale-conosco__text-area" rows="10"></textarea>
+                            <label class="label-com-input__label" for="mensagem-pessoa">Mensagem
+                                <textarea name="mensagem-pessoa" id="mensagem-pessoa" class="label-com-input__input rows="10"></textarea>
                             </label>
                             <button class="botao botao2--azul1">Enviar Mensagem</button>
                         </form>

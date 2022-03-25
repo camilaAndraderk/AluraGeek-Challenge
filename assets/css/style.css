@@ -58,14 +58,24 @@ html{
     position: relative;
 }
 
+.cabecalho__principal__secao{
+    display: flex;
+    width: 60%;
+}
+
 .cabecalho__botao:hover{
     transform: scale(1.05);
 }
 
-.cabecalho__botao--logout{
+.cabecalho__botao--logout,
+.cabecalho__botao__menu{
     display: none;
 }
-    
+
+.cabecalho__botao__menu{
+    min-width: 134px;
+}
+
 .rodape{
     display: flex;
     flex-direction: column;

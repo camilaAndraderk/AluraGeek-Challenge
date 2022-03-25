@@ -1,11 +1,12 @@
 .barra-pesquisa{
     background: #F5F5F5;
-    width: 45%;
-    margin-right: 25%;
+    width: 67%;
+    margin-right: 10%;
     display: flex;
     padding: 8px 16px;
     border-radius: 20px;
     z-index: 2;
+    box-sizing: border-box;
 } 
 
 .barra-pesquisa__input{
@@ -58,14 +59,6 @@
     100%{
         display: none;
     }
-}
-
-
-@media (max-width: 768px){
-    .barra-pesquisa{
-        margin-right: 10%;
-    }
-   
 }
 
 

@@ -1,3 +1,11 @@
+.cabecalho__botao--login,
+.cabecalho__botao--sair{
+    display: none;
+}
+.cabecalho__botao__menu{
+    display: block;
+}
+
 .conteudo{
     background-color: var(--cor-fundo-cinza);
     display: flex;

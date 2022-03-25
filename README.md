@@ -27,4 +27,4 @@ O objetivo é simular o ambiente de desenvolvimento de uma empresa criando um e-
 
 
 
-**Resultado: https://camilaandraderk.github.io/AluraGeek-Challenge/**
+**Resultado: https://camilaandraderk.github.io/AluraGeek-Challenge/pages**

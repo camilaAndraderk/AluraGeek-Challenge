@@ -18,7 +18,7 @@ O objetivo é simular o ambiente de desenvolvimento de uma empresa criando um e-
 - JS
 
 
-**Etapa concluída:**
+**Etapas concluídas:**
 - Criação de todas as páginas com responsividade
 - Ligação entre as páginas
 

@@ -70,5 +70,8 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
+    .produtos__cabecalho {
+        padding-bottom: 130%;
+    }
 }

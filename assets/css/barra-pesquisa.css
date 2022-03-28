@@ -65,6 +65,7 @@
 @media (max-width: 500px){
     .barra-pesquisa{
         display: none;
+        top: -1rem;
         left: 92%; 
         width: 0%;
         transform: translateX(-100%); 

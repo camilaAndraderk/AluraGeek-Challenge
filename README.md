@@ -46,4 +46,4 @@ O objetivo é simular o ambiente de desenvolvimento de uma empresa criando um e-
   - npm install
 
 - **Suba o servidor:**
-  - json-server --watch db.json
+  - json-server --watch db.json **ou** npx json-server --watch db.json

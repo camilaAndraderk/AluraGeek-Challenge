@@ -1,0 +1,23 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "https://camilaandraderk.github.io/AluraGeek-Challenge/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://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@github.com/camilaAndraderk/AluraGeek-Challenge.git"
+  },
+  "keywords": [],
+  "author": "Camila Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camilaAndraderk/AluraGeek-Challenge/issues"
+  },
+  "homepage": "https://github.com/camilaAndraderk/AluraGeek-Challenge#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

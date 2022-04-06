@@ -28,3 +28,22 @@ O objetivo é simular o ambiente de desenvolvimento de uma empresa criando um e-
 
 
 **Resultado: https://camilaandraderk.github.io/AluraGeek-Challenge/pages**
+
+
+## Executando o projeto:
+**No terminal execute os comandos:**
+- **Instale o node.js:**
+  - sudo apt update
+  - sudo apt install nodejs
+
+- **Verifique a versão do node:**
+  - nodejs -v
+
+- **Instale o NPM:** 
+  - sudo apt install npm
+
+- **Instale as dependências, na pasta raiz do projeto execute:**
+  - npm install
+
+- **Suba o servidor:**
+  - json-server --watch db.json

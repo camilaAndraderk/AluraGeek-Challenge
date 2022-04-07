@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/produto.css">
 
-    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/jquery-3.6.0.js" defer></script>
     <script src="../assets/js/principal.js" type="module" defer></script>
     <script src="../assets/controller/detalhar-produto-controller.js" type="module" defer></script>
 </head>
@@ -25,67 +25,7 @@
             <div class="produtos__secao__cabecalho">
                 <h3 class="produtos__secao__titulo">Produtos similares</h3>
             </div>
-            <ul class="produtos__lista">
-                <li class="produtos__item">
-                    <div class="produtos__cabecalho">
-                        <img src="../assets/img/stormtrooper-mug.jpg" alt="Foto do produto" class="produtos__img" loading="lazy">
-                    </div>
-                    <div class="produtos__conteudo">
-                        <h6 class="produtos__nome">Produtos XYZ</h6>
-                        <p class="produtos__valor">R$ <span>60,00</span></p>
-                        <a href="#" class="produtos__link">Ver Produto</a>
-                    </div>
-                </li>
-                <li class="produtos__item">
-                    <div class="produtos__cabecalho">
-                        <img src="../assets/img/vader-pilot-lego.jpg" alt="Foto do produto" class="produtos__img" loading="lazy">
-                    </div>
-                    <div class="produtos__conteudo">
-                        <h6 class="produtos__nome">Produtos XYZ</h6>
-                        <p class="produtos__valor">R$ <span>60,00</span></p>
-                        <a href="#" class="produtos__link">Ver Produto</a>
-                    </div>
-                </li>
-                <li class="produtos__item">
-                    <div class="produtos__cabecalho">
-                        <img src="../assets/img/yoda-statue.jpg" alt="Foto do produto" class="produtos__img" loading="lazy">
-                    </div>
-                    <div class="produtos__conteudo">
-                        <h6 class="produtos__nome">Produtos XYZ</h6>
-                        <p class="produtos__valor">R$ <span>60,00</span></p>
-                        <a href="#" class="produtos__link">Ver Produto</a>
-                    </div>
-                </li>
-                <li class="produtos__item">
-                    <div class="produtos__cabecalho">
-                        <img src="../assets/img/stormtrooper-figure.jpg" alt="Foto do produto" class="produtos__img" loading="lazy">
-                    </div>
-                    <div class="produtos__conteudo">
-                        <h6 class="produtos__nome">Produtos XYZ</h6>
-                        <p class="produtos__valor">R$ <span>60,00</span></p>
-                        <a href="#" class="produtos__link">Ver Produto</a>
-                    </div>
-                </li>
-                <li class="produtos__item">
-                    <div class="produtos__cabecalho">
-                        <img src="../assets/img/kylo-figure.jpg" alt="Foto do produto" class="produtos__img" loading="lazy">
-                    </div>
-                    <div class="produtos__conteudo">
-                        <h6 class="produtos__nome">Produtos XYZ</h6>
-                        <p class="produtos__valor">R$ <span>60,00</span></p>
-                        <a href="#" class="produtos__link">Ver Produto</a>
-                    </div>
-                </li>
-                <li class="produtos__item">
-                    <div class="produtos__cabecalho">
-                        <img src="../assets/img/xbox-one-white-controller.jpg" alt="Foto do produto" class="produtos__img" loading="lazy">
-                    </div>
-                    <div class="produtos__conteudo">
-                        <h6 class="produtos__nome">Produtos XYZ</h6>
-                        <p class="produtos__valor">R$ <span>60,00</span></p>
-                        <a href="#" class="produtos__link">Ver Produto</a>
-                    </div>
-                </li>
+            <ul class="produtos__lista" data-produto-lista>
             </ul>
         </section>
     </main>

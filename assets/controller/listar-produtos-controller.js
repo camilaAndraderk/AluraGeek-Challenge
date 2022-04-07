@@ -1,7 +1,11 @@
 import { produtoService } from "../../service/produto-service.js"
 
-const listarProdutos = (produtos, categoriaBuscada, quantidadeMaxItens) => {
-    let quantidadeItens = 0;
+const encontraItemPeloId = (itemId, id) => {
+    console.log(`${itemId} -- ${itemId == id ? true : false}`)
+    return itemId == id ? true : false;
+}
+
+const listarProdutos = (produtos, sessao, quantidadeMaxItens) => { // sessão pode estar vazia
     let i;
     for(i = 0; i < quantidadeMaxItens; i++){
         if(produtos[i]){
@@ -11,15 +15,22 @@ const listarProdutos = (produtos, categoriaBuscada, quantidadeMaxItens) => {
                 produtos[i].categoria,
                 produtos[i].valor,
                 produtos[i].img,
-                categoriaBuscada
+                sessao
             );
         }
     }
 }
 
 const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
-    const elementoLista = $(`[data-produto-lista="${sessao}"]`);
+    let elementoLista;
 
+    if(sessao && sessao != ""){
+        elementoLista = $(`[data-produto-lista="${sessao}"]`);
+    }
+    else{
+        elementoLista = $(`[data-produto-lista]`);
+    }
+    
     const template = `
         <li class="produtos__item" data-produto-id="${id}">
             <div class="produtos__cabecalho">
@@ -43,8 +54,13 @@ const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
 
     const categoria1 = 'Star Wars';
     const sessao1 = 'star-wars';
-    const produtosCategoria1 =  await produtoService.buscarProdutosCategoria(categoria1);
-    listarProdutos(produtosCategoria1, sessao1, quantidadeMaxItens);
+    try{
+        const produtosCategoria1 =  await produtoService.buscarProdutosCategoria(categoria1);
+        listarProdutos(produtosCategoria1, sessao1, quantidadeMaxItens);
+    }
+    catch(erro){
+        console.log(erro);
+    }
     //--será usado para excluir um produto--
     // const elementoProdutoLista = $('[data-ver-produto]').each(()=>{
     //     return $(this).closest('[data-produto-id]');
@@ -57,3 +73,10 @@ const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
     // })
     
 })();
+
+
+export const listarProdutosController = {
+    criarNovoItem,
+    listarProdutos,
+    encontraItemPeloId
+}

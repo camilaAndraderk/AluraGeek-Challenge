@@ -1,8 +1,8 @@
 const buscarProdutosCategoria = (categoria) => {
-    return fetch(`http://localhost:3000/produtos/?categoria=${categoria}`)
-    .then((reposta)=>{
-        if(reposta.ok){
-            return reposta.json();
+    return fetch(`http://localhost:3000/produtos/?categoria_like=${categoria}`)
+    .then((resposta)=>{
+        if(resposta.ok){
+            return resposta.json();
         }
         throw new Error('Não foi possível listar os produtos');
     });
@@ -10,9 +10,9 @@ const buscarProdutosCategoria = (categoria) => {
 
 const buscarProdutosId = (id) => {
     return fetch(`http://localhost:3000/produtos/${id}`)
-    .then((reposta)=>{
-        if(reposta.ok){
-            return reposta.json();
+    .then((resposta)=>{
+        if(resposta.ok){
+            return resposta.json();
         }
         throw new Error('Não foi possível listar o produto');
     });

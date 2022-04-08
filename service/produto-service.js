@@ -1,5 +1,5 @@
 const buscarProdutosCategoria = (categoria) => {
-    return fetch(`http://localhost:3000/produtos/?categoria_like=${categoria}`)
+    return fetch(`http://localhost:3000/produtos/?categoria_like=${categoria}&_sort=nome,valor&_order=asc,asc`)
     .then((resposta)=>{
         if(resposta.ok){
             return resposta.json();

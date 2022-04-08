@@ -2,7 +2,7 @@
 	"produtos":[
 		{
 			"id": 1,
-			"nome": "teste",
+			"nome": "Caneca Stormtrooper",
 			"categoria": "Star Wars",
 			"valor": 100.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
@@ -10,59 +10,140 @@
 		},
 		{
 			"id": 2,
-			"nome": "aa",
-			"categoria": "aaa",
-			"valor": 100.00,
+			"nome": "Darth vader Lego",
+			"categoria": "Star Wars",
+			"valor": 500.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
-			"img": "../assets/img/stormtrooper-mug.jpg"
+			"img": "../assets/img/vader-pilot-lego.jpg"
 		},
 		{
 			"id": 3,
-			"nome": "Grogu1",
+			"nome": "Estátua Yoda",
 			"categoria": "Star Wars",
-			"valor": 200.00,
+			"valor": 250.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
-			"img": "../assets/img/baby-yoda.jpg"
+			"img": "../assets/img/yoda-statue.jpg"
 		},
 		{
 			"id": 4,
-			"nome": "Grogu2",
+			"nome": "Banner Stormtrooper",
 			"categoria": "Star Wars",
-			"valor": 200.00,
+			"valor": 90.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
-			"img": "../assets/img/baby-yoda.jpg"
+			"img": "../assets/img/stormtrooper-figure.jpg"
 		},
 		{
 			"id": 5,
-			"nome": "Grogu3",
+			"nome": "Boneco Grogu (Baby Yoda)",
 			"categoria": "Star Wars",
-			"valor": 200.00,
+			"valor": 300.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
 			"img": "../assets/img/baby-yoda.jpg"
 		},
 		{
 			"id": 6,
-			"nome": "Grogu4",
+			"nome": "Banner Kylo Ren",
 			"categoria": "Star Wars",
-			"valor": 200.00,
+			"valor": 80.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
-			"img": "../assets/img/baby-yoda.jpg"
+			"img": "../assets/img/kylo-figure.jpg"
 		},
 		{
 			"id": 7,
-			"nome": "Grogu5",
-			"categoria": "Star Wars",
-			"valor": 200.00,
+			"nome": "Controle Branco Xbox One",
+			"categoria": "Consoles",
+			"valor": 430.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
-			"img": "../assets/img/baby-yoda.jpg"
+			"img": "../assets/img/xbox-one-white-controller.jpg"
 		},
 		{
 			"id": 8,
-			"nome": "Grogu6",
-			"categoria": "Star Wars",
-			"valor": 200.00,
+			"nome": "Controle Branco PS5",
+			"categoria": "Consoles",
+			"valor": 430.00,
 			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
-			"img": "../assets/img/baby-yoda.jpg"
+			"img": "../assets/img/ps5-white-with-controller.jpg"
+		},
+		{
+			"id": 9,
+			"nome": "Console Nitendo NES",
+			"categoria": "Consoles",
+			"valor": 300.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/nes-console.jpg"
+		},
+		{
+			"id": 10,
+			"nome": "Switch Controle Nitendo",
+			"categoria": "Consoles",
+			"valor": 430.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/switch-controllers.jpg"
+		},
+		{
+			"id": 11,
+			"nome": "Console Xbox One",
+			"categoria": "Consoles",
+			"valor": 1520.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/xbox-one.jpg"
+		},
+		{
+			"id": 12,
+			"nome": "Gameboy",
+			"categoria": "Consoles",
+			"valor": 78.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/gameboy.jpg"
+		},
+		{
+			"id": 13,
+			"nome": "Camisa Atari",
+			"categoria": "Diversos",
+			"valor": 60.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/atari-shirt.jpg"
+		},
+		{
+			"id": 14,
+			"nome": "Camisa NES",
+			"categoria": "Diversos",
+			"valor": 60.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/nes-shirt.jpg"
+		},
+		{
+			"id": 15,
+			"nome": "Estátua Sonic",
+			"categoria": "Diversos",
+			"valor": 450.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/sonic-tails-statue.jpg"
+		},
+		{
+			"id": 16,
+			"nome": "Rádio Relógio Rosa",
+			"categoria": "Diversos",
+			"valor": 150.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/pink-clock-radio.jpg"
+		},
+		{
+			"id": 17,
+			"nome": "Óculos PlayStation VR",
+			"categoria": "Diversos",
+			"valor": 2514.00,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/ps-vr.jpg"
+		},
+		{
+			"id": 18,
+			"nome": "Pikachu Gigante de Pelúcia",
+			"categoria": "Diversos",
+			"valor": 1200.50,
+			"descricao": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam",
+			"img": "../assets/img/pikachu-plush.jpg"
 		}
+		
 	]
 }

@@ -53,14 +53,47 @@ const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
     const quantidadeMaxItens = 6;
 
     const categoria1 = 'Star Wars';
-    const sessao1 = 'star-wars';
+    const sessao1 = 'primeira';
+    const elementoTitulo1 = $('[data-produtos-secao-titulo1]');
     try{
         const produtosCategoria1 =  await produtoService.buscarProdutosCategoria(categoria1);
-        listarProdutos(produtosCategoria1, sessao1, quantidadeMaxItens);
+        if(produtosCategoria1.length > 0){
+            listarProdutos(produtosCategoria1, sessao1, quantidadeMaxItens);
+            elementoTitulo1.text(categoria1);
+        }
     }
     catch(erro){
         console.log(erro);
     }
+
+    const categoria2 = 'Consoles';
+    const sessao2 = 'segunda';
+    const elementoTitulo2 = $('[data-produtos-secao-titulo2]');
+    try{
+        const produtosCategoria2 =  await produtoService.buscarProdutosCategoria(categoria2);
+        if(produtosCategoria2.length > 0){
+            listarProdutos(produtosCategoria2, sessao2, quantidadeMaxItens);
+            elementoTitulo2.text(categoria2);
+        }
+    }
+    catch(erro){
+        console.log(erro);
+    }
+
+    const categoria3 = 'Diversos';
+    const sessao3 = 'terceira';
+    const elementoTitulo3 = $('[data-produtos-secao-titulo3]');
+    try{
+        const produtosCategoria3 =  await produtoService.buscarProdutosCategoria(categoria3);
+        if(produtosCategoria3.length > 0){
+            listarProdutos(produtosCategoria3, sessao3, quantidadeMaxItens);
+            elementoTitulo3.text(categoria3);
+        }
+    }
+    catch(erro){
+        console.log(erro);
+    }
+
     //--será usado para excluir um produto--
     // const elementoProdutoLista = $('[data-ver-produto]').each(()=>{
     //     return $(this).closest('[data-produto-id]');

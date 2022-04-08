@@ -58,9 +58,13 @@
     box-sizing: border-box;
 }
 
-.produtos__secao{
+.produtos{
     width: 100%;
     max-width: 1040px; 
+}
+
+.produtos__secao__link{
+    display: none;
 }
 
 @media (max-width: 768px){

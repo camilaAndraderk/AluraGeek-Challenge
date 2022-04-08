@@ -1,65 +1,17 @@
 import { produtoService } from "../../service/produto-service.js"
+import { templateProdutosController } from "./template-produtos-controller.js"
 
-const encontraItemPeloId = (itemId, id) => {
-    console.log(`${itemId} -- ${itemId == id ? true : false}`)
-    return itemId == id ? true : false;
-}
-
-const listarProdutos = (produtos, sessao, quantidadeMaxItens) => { // sessão pode estar vazia
-    let i;
-    for(i = 0; i < quantidadeMaxItens; i++){
-        if(produtos[i]){
-            criarNovoItem( 
-                produtos[i].id,
-                produtos[i].nome,
-                produtos[i].categoria,
-                produtos[i].valor,
-                produtos[i].img,
-                sessao
-            );
-        }
-    }
-}
-
-const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
-    let elementoLista;
-
-    if(sessao && sessao != ""){
-        elementoLista = $(`[data-produto-lista="${sessao}"]`);
-    }
-    else{
-        elementoLista = $(`[data-produto-lista]`);
-    }
-    
-    const template = `
-        <li class="produtos__item" data-produto-id="${id}">
-            <div class="produtos__cabecalho">
-                <img src="${img}" alt="Foto do produto" class="produtos__img" loading="lazy">
-            </div>
-            <div class="produtos__conteudo">
-                <h6 class="produtos__nome">${nome}</h6>
-                <p class="produtos__valor">R$ <span>${valor}</span></p>
-                <a href="../pages/produto.html?id=${id}" class="produtos__link" data-ver-produto>Ver Produto</a>
-            </div>
-        </li>
-    
-    `;
-    
-    elementoLista.append(template);
-
-}
 
 (async () => {
     const quantidadeMaxItens = 6;
 
     const categoria1 = 'Star Wars';
-    const sessao1 = 'primeira';
-    const elementoTitulo1 = $('[data-produtos-secao-titulo1]');
+    const secao1 = 'star-wars';
     try{
         const produtosCategoria1 =  await produtoService.buscarProdutosCategoria(categoria1);
         if(produtosCategoria1.length > 0){
-            listarProdutos(produtosCategoria1, sessao1, quantidadeMaxItens);
-            elementoTitulo1.text(categoria1);
+            templateProdutosController.criarNovaSecao(secao1, categoria1, categoria1);
+            templateProdutosController.listarProdutos(produtosCategoria1, secao1, quantidadeMaxItens);
         }
     }
     catch(erro){
@@ -67,13 +19,12 @@ const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
     }
 
     const categoria2 = 'Consoles';
-    const sessao2 = 'segunda';
-    const elementoTitulo2 = $('[data-produtos-secao-titulo2]');
+    const secao2 = 'consoles';
     try{
         const produtosCategoria2 =  await produtoService.buscarProdutosCategoria(categoria2);
         if(produtosCategoria2.length > 0){
-            listarProdutos(produtosCategoria2, sessao2, quantidadeMaxItens);
-            elementoTitulo2.text(categoria2);
+            templateProdutosController.criarNovaSecao(secao2, categoria2, categoria2);
+            templateProdutosController.listarProdutos(produtosCategoria2, secao2, quantidadeMaxItens);
         }
     }
     catch(erro){
@@ -81,13 +32,12 @@ const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
     }
 
     const categoria3 = 'Diversos';
-    const sessao3 = 'terceira';
-    const elementoTitulo3 = $('[data-produtos-secao-titulo3]');
+    const secao3 = 'diversos';
     try{
         const produtosCategoria3 =  await produtoService.buscarProdutosCategoria(categoria3);
         if(produtosCategoria3.length > 0){
-            listarProdutos(produtosCategoria3, sessao3, quantidadeMaxItens);
-            elementoTitulo3.text(categoria3);
+            templateProdutosController.criarNovaSecao(secao3, categoria3, categoria3);
+            templateProdutosController.listarProdutos(produtosCategoria3, secao3, quantidadeMaxItens);
         }
     }
     catch(erro){
@@ -106,10 +56,3 @@ const criarNovoItem = (id, nome, categoria, valor, img, sessao) => {
     // })
     
 })();
-
-
-export const listarProdutosController = {
-    criarNovoItem,
-    listarProdutos,
-    encontraItemPeloId
-}

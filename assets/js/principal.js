@@ -18,8 +18,8 @@ $(function(){
 
 
     /* Abrindo e fechando barra de pesquisa */
-    const elementoAbrirBarraPesquisa = $('.lupa-individual__lupa');
-    const elementoFecharBarraPesquisa = $('.lupa-individual__fechar');
+    const elementoAbrirBarraPesquisa = $('[data-abrir-barra-pesquisa]');
+    const elementoFecharBarraPesquisa = $('[data-fechar-barra-pesquisa]');
 
     elementoAbrirBarraPesquisa.click(function(){
         abrirBarraPesquisa($(this), elementoFecharBarraPesquisa);
@@ -27,6 +27,15 @@ $(function(){
 
     elementoFecharBarraPesquisa.click(function(){
         fecharBarraPesquisa($(this), elementoAbrirBarraPesquisa);
+    });
+
+    // Fazendo uma pesquisa
+    $('[data-botao-pesquisa]').click((evento)=>{
+        evento.preventDefault();
+        console.log(evento.target);
+        const textoPesquisa = $('[data-barra-pesquisa-input]').val();
+
+        window.location.href = `./produtos-todos.html?nome=${textoPesquisa}`;
     });
 
 });

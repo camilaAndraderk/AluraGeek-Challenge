@@ -30,12 +30,13 @@ import { templateProdutosController } from "./template-produtos-controller.js"
         }
         catch(erro){
             console.log(erro);
-            
         }
     }
     catch(erro){
         console.log(erro);
+        window.location.href = `./erro.html?erro=${erro}`
     }
+
 
 })();
 

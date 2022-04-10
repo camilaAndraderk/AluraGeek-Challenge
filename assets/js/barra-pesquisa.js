@@ -1,6 +1,6 @@
 export function abrirBarraPesquisa(elementoClicado, elementoFecharBarraPesquisa){
-    const elementoBarraPesquisa = $('.barra-pesquisa');
-    const elementoBarraPesquisaInput = $('.barra-pesquisa__input');
+    const elementoBarraPesquisa = $('[data-barra-pesquisa]');
+    const elementoBarraPesquisaInput = $('[data-barra-pesquisa__input]');
 
     elementoClicado.toggle();
     elementoFecharBarraPesquisa.toggle();
@@ -12,7 +12,7 @@ export function abrirBarraPesquisa(elementoClicado, elementoFecharBarraPesquisa)
 }
 
 export function fecharBarraPesquisa(elementoClicado, elementoAbrirBarraPesquisa){
-    const elementoBarraPesquisa = $('.barra-pesquisa');
+    const elementoBarraPesquisa = $('[data-barra-pesquisa]');
 
     elementoClicado.toggle();
     elementoAbrirBarraPesquisa.toggle();

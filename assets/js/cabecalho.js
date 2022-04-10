@@ -9,9 +9,9 @@ export function criarCabecalho(){
                                         <img src="../assets/img/AluraGeek-geek.svg" alt="Geek" class="logo__titulo__img" loading="lazy">
                                     </h1>
                                 </a>
-                                <form action="" class="barra-pesquisa">
-                                    <input type="text" class="barra-pesquisa__input" placeholder="O que deseja encontrar?">
-                                    <button class="barra-pesquisa__botao">
+                                <form action="" class="barra-pesquisa" data-barra-pesquisa>
+                                    <input type="text" class="barra-pesquisa__input" data-barra-pesquisa-input placeholder="O que deseja encontrar?" pattern="[A-Za-z]{3}">
+                                    <button class="barra-pesquisa__botao" data-botao-pesquisa>
                                         <img src="../assets/img/Vector-lupa.svg" alt="Lupa para pesquisar" class="barra-pesquisa__imagem" loading="lazy">
                                     </button>
                                 </form>
@@ -22,8 +22,12 @@ export function criarCabecalho(){
                                 <a href="./produtos-home.html" class="botao botao2 cabecalho__botao__menu">Menu administrador</a>
                             </div>
                             <span class="lupa-individual">
-                                <img src="../assets/img/Vector-lupa-principal.svg" alt="Lupa de pesquisa" class="lupa-individual__lupa" loading="lazy">
-                                <p class="lupa-individual__fechar">X</p>
+                                <button class=" lupa-individual__botao lupa-individual--abrir" data-abrir-barra-pesquisa>
+                                    <img src="../assets/img/Vector-lupa-principal.svg" alt="Lupa de pesquisa" loading="lazy">
+                                </button>
+                                <button class="lupa-individual__botao lupa-individual--fechar" data-fechar-barra-pesquisa type="submit">
+                                    <p>X</p>
+                                </button>
                             </span>
                         </div>`;
     return cabecalho;

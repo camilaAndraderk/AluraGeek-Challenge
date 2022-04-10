@@ -2,12 +2,19 @@ const encontraItemPeloId = (itemId, id) => {
     return itemId == id ? true : false;
 }
 
+const voltarPagina = () => {
+    $('[data-botao-voltar]').click(()=>{
+        history.back();
+    })
+}
+
 const criarTemplateSemResultadosPesquisa = () => {
     return `
-        <div class="erro">
-            <p>Não existem resultados para a pesquisa.</p>
-            <button class="botao botao1--azul1">Voltar à página anterior</button>
-            <img src="../assets/img/darth-vader-assustado.png" atl="Foto do Darth Vader assustado" loading="lazy">
+        <div class="erro-pesquisa">
+
+            <p class="erro-pesquisa__texto">Que pena! Não existem resultados para esta pesquisa.</p>
+            <img src="../assets/img/darth-vader-confuso.webp" atl="Foto do Grogu triste" loading="lazy" class="erro-pesquisa__img">
+            <button class="botao botao1--azul1 erro-pesquisa__botao" data-botao-voltar>Voltar à página anterior</button>
         </div>
     `;
 }
@@ -47,6 +54,7 @@ const listarProdutos = (produtos, secao, quantidadeMaxItens) => { // sessão pod
     }
     else{
         elementoSecaoProdutos.append(criarTemplateSemResultadosPesquisa());
+        voltarPagina();
     }
 
 }

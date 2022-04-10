@@ -19,7 +19,8 @@
     outline: none;
 }
 
-.barra-pesquisa__botao{
+.barra-pesquisa__botao,
+.lupa-individual__botao{
     width: 23px;
     background: transparent;
     border: none;
@@ -27,18 +28,18 @@
 }
 
 .barra-pesquisa__botao:hover,
-.lupa-individual__lupa:hover,
-.lupa-individual__fechar:hover{
+.lupa-individual--abrir:hover,
+.lupa-individual--fechar:hover{
     cursor: pointer;
 }
 
 .lupa-individual,
-.lupa-individual__lupa,
-.lupa-individual__fechar{
+.lupa-individual--abrir,
+.lupa-individual--fechar{
     display: none;
 }
 
-.lupa-individual__fechar{
+.lupa-individual--fechar{
     font-size: 1.6rem;
     font-weight: bold;
 }
@@ -94,11 +95,11 @@
         grid-row: 1 / 1;
     }
     
-    .lupa-individual__lupa{
+    .lupa-individual--abrir{
         display: block;
     }
     
-    .lupa-individual__fechar{
+    .lupa-individual--fechar{
         display: none;
     }
 }

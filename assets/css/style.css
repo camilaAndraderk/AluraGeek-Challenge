@@ -106,6 +106,30 @@ html{
     line-height: 2rem;
 }
 
+.erro-pesquisa{
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.erro-pesquisa__img{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.erro-pesquisa__texto{
+    top: 9rem;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 8, 78, .5);
+    padding: 2rem 0;
+    backdrop-filter: blur(2px);
+    font-weight: 600;
+    color: var(--cor-branco-principal);
+    border-radius: 8px;
+}
 
 /*Responsividade do cabeçalho e rodapé*/
 
@@ -135,6 +159,10 @@ html{
     .rodape__logo{
         grid-column: 1 / 1;
         grid-row: 1 / 1;
+    }
+
+    .erro-pesquisa{
+        width: 90%;
     }
 }
 

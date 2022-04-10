@@ -9,3 +9,8 @@
         "produtos";
     grid-template-rows: 352px auto;
 }
+
+.ver-todos-produtos{
+    height: 5rem;
+    text-align: center;
+}

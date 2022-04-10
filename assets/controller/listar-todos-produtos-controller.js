@@ -9,24 +9,43 @@ import { templateProdutosController } from "./template-produtos-controller.js"
     if(url.searchParams.get('nome')){ // quando usa a barra de pesquisa, é pesquisado por um nome
         const nomePesquisa = url.searchParams.get('nome');
         tituloSecao = `Resultados da pesquisa: ${nomePesquisa}`;
-
-        templateProdutosController.criarNovaSecao(secao, tituloSecao, tituloSecao);
-        templateProdutosController.listarProdutos(produtos, secao, 'aa')
+        try{
+            const produtos = await produtoService.buscarProdutosNome(nomePesquisa);
+            templateProdutosController.criarNovaSecao(secao, tituloSecao, tituloSecao);
+            templateProdutosController.listarProdutos(produtos, secao, 'sem limite')
+        }
+        catch(erro){
+            console.log(erro);
+            window.location.href = `./erro.html?erro=${erro}`;
+        }
     }
 
     else if(url.searchParams.get('categoria')){ // quando clica em 'ver todos', é repassada a categoria da seção
         const categoriaPesquisa = url.searchParams.get('categoria');
         tituloSecao = `Todos os Produtos: ${categoriaPesquisa}`;
 
-        const produtos = await produtoService.buscarProdutosCategoria(categoriaPesquisa);
-        templateProdutosController.criarNovaSecao(secao, tituloSecao, );
-        templateProdutosController.listarProdutos(produtos, secao, categoriaPesquisa)
+        try{
+            const produtos = await produtoService.buscarProdutosCategoria(categoriaPesquisa);
+            templateProdutosController.criarNovaSecao(secao, tituloSecao, );
+            templateProdutosController.listarProdutos(produtos, secao, categoriaPesquisa)
+        }
+        catch(erro){
+            console.log(erro);
+            window.location.href = `./erro.html?erro=${erro}`;
+        }
 
     }
 
     else{
-        templateProdutosController.criarNovaSecao(secao, tituloSecao, "" );
-        templateProdutosController.listarProdutos(produtos, secao, "")
+        try{
+            const produtos = await produtoService.buscarProdutosNome("");
+            templateProdutosController.criarNovaSecao(secao, tituloSecao, "" );
+            templateProdutosController.listarProdutos(produtos, secao, "sem limite")
+        }
+        catch(erro){
+            console.log(erro);
+            window.location.href = `./erro.html?erro=${erro}`;
+        }
     }
 
 

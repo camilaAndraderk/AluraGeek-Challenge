@@ -1,0 +1,23 @@
+.conteudo{
+    padding: 8rem 0;
+}
+
+.erro{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.erro__texto{
+    font-size: 4.2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: rgba(255, 8, 78, .4);
+    margin-bottom: 2rem;
+}
+
+.erro-__img{
+    width: 100%;
+}

@@ -16,6 +16,7 @@ import { templateProdutosController } from "./template-produtos-controller.js"
     }
     catch(erro){
         console.log(erro);
+        window.location.href = `./erro.html?erro=${erro}`;
     }
 
     const categoria2 = 'Consoles';
@@ -29,6 +30,7 @@ import { templateProdutosController } from "./template-produtos-controller.js"
     }
     catch(erro){
         console.log(erro);
+        window.location.href = `./erro.html?erro=${erro}`;
     }
 
     const categoria3 = 'Diversos';
@@ -42,6 +44,7 @@ import { templateProdutosController } from "./template-produtos-controller.js"
     }
     catch(erro){
         console.log(erro);
+        window.location.href = `./erro.html?erro=${erro}`;
     }
 
     //--será usado para excluir um produto--

@@ -22,8 +22,8 @@ O objetivo é simular o ambiente de desenvolvimento de uma empresa criando um e-
 - Criação de todas as páginas com responsividade
 - Ligação entre as páginas
 
-**Poróximas semanas:**
-- Trabalhar com JS
+**Em andamento:**
+- Trabalhando com Json server
 
 
 

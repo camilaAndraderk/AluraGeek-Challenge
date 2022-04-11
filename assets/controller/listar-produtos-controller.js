@@ -44,18 +44,7 @@ import { templateProdutosController } from "./template-produtos-controller.js"
     }
     catch(erro){
         console.log(erro);
-        window.location.href = `./erro.html?erro=${erro}`;
+        window.location.href = `./erro.html?erro=${erro}`;J
     }
-
-    //--será usado para excluir um produto--
-    // const elementoProdutoLista = $('[data-ver-produto]').each(()=>{
-    //     return $(this).closest('[data-produto-id]');
-    // });
-
-    // elementoProdutoLista.click(function(evento){
-    //     const produtoADetalhar = evento.target.closest('[data-produto-id]');
-    //     const idProdutoADetalhar = produtoADetalhar.getAttribute("data-produto-id");
-        
-    // })
     
 })();

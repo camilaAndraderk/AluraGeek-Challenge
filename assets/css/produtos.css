@@ -27,7 +27,7 @@
     font-weight: 700;
     font-size: 1.6rem;
     color: var(--cor-azul-principal);
-    display: flex;
+    display: none;
 }
 
 .produtos__secao__img{
@@ -50,6 +50,7 @@
         "conteudo-item";
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
+    align-content: flex-start;
     width: calc(16.66% - var(--espaco-entre-produtos) + var(--espaco-entre-produtos)/6);
     grid-row-gap: 1rem;
     transition: transform .1s;

@@ -9,16 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/produto-adicionar.css">
+    <link rel="stylesheet" href="../assets/css/produto-editar.css">
 
     <script src="../assets/js/jquery-3.6.0.js"></script>
     <script src="../assets/js/principal.js" type="module" defer></script>
+    <script src="../assets/controller/editar-produto-controller.js"></script>
+
 </head>
 <body class="loja fadeIn">
     <header class="cabecalho">
     </header>
     <main class="conteudo">
-        <form action="" class="novo-produto">
+        <form action="./produtos-home.html" class="novo-produto">
             <legend class="formulario-titulo novo-produto__tituo ">Adicionar novo produto</legend>
             <div class="insercao-foto">
                 <div class="insercao-foto__input">
@@ -28,22 +30,18 @@
             </div>
             <label class="label-com-input__label">
                 Nome do produto
-                <input type="text" class="label-com-input__input" data-nome-produto name="nomeProduto">
-            </label>
-            <label class="label-com-input__label">
-                Categoria do produto
-                <input type="text" class="label-com-input__input" data-categoria-produto name="categriaProduto">
+                <input type="text" class="label-com-input__input">
             </label>
             <label class="label-com-input__label">
                 Preço do produto<br>
-                <input type="number" class="label-com-input__input" data-valor-produto name="valorProduto">
+                <input type="number" class="label-com-input__input">
             </label>
             <label class="label-com-input__label" for="descricao-produto">
                 Descrição do produto
-                <textarea data-descricao-produto name="descricaoProduto"  id="descricao-produto" class="label-com-input__input" rows="3"></textarea>
+                <textarea name="descricao-produto" id="descricao-produto" class="label-com-input__input" rows="3"></textarea>
             </label>
 
-            <button class="botao1--azul1 botao" type>Adicionar Produto</button>
+            <button class="botao1--azul1 botao">Adicionar Produto</button>
         </form>
     </main>
     <footer class="rodape">

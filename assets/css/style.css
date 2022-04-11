@@ -30,6 +30,10 @@ html{
     --padding-lateral-tablet: 8vw;
 }
 
+.fadeIn{
+    animation: fadeIn .5s forwards;
+}
+
 .loja{
     display: grid;
     grid-template-areas: 
@@ -129,6 +133,23 @@ html{
     font-weight: 600;
     color: var(--cor-branco-principal);
     border-radius: 8px;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /*Responsividade do cabeçalho e rodapé*/

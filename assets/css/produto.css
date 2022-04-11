@@ -63,10 +63,6 @@
     max-width: 1040px; 
 }
 
-.produtos__secao__link{
-    display: none;
-}
-
 @media (max-width: 768px){
     .conteudo{
         padding: 50px 5%;

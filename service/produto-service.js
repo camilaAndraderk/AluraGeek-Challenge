@@ -28,8 +28,20 @@ const buscarProdutosId = (id) => {
     });
 }
 
+const deletarProduto = (id) => {
+    return fetch(`http://localhost:3000/produtos/${id}`,{
+        method: 'DELETE'
+    })
+    .then(resposta => {
+        if(!resposta.ok){
+            throw new Error('Não foi possível deletar o cliente')
+        }
+    })
+}
+
 export const produtoService = {
     buscarProdutosCategoria,
     buscarProdutosNome,
-    buscarProdutosId
+    buscarProdutosId,
+    deletarProduto
 };

@@ -19,6 +19,45 @@ const criarTemplateSemResultadosPesquisa = () => {
     `;
 }
 
+const criarNovaSecao = (secao, tituloSecao, categoria) => {
+    const elementoSecaoProdutos = $('[data-produtos]');
+
+    const template = `
+        <section class="produtos__secao">
+            <div class="produtos__secao__cabecalho">
+                <h3 class="produtos__secao__titulo" data-produtos-secao-titulo>${tituloSecao}</h3>
+                <a href="./produtos-todos.html?categoria=${categoria}" class="produtos__secao__link">
+                    Ver tudo
+                    <img src="../assets/img/Vector-seta-direita.svg" alt="Seta para direita" class="produtos__secao__img" loading="lazy">
+                </a>
+            </div>
+            <ul class="produtos__lista" data-produto-lista="${secao}">
+                
+            </ul>
+        </section>
+    `;
+    
+    elementoSecaoProdutos.append(template);
+}
+
+const criarNovaSecaoControle = (secao, tituloSecao) => {
+    const elementoSecaoProdutos = $('[data-produtos]');
+
+    const template = `
+        <section class="produtos__secao">
+            <div class="produtos__secao__cabecalho">
+                <h3 class="produtos__secao__titulo" data-produtos-secao-titulo>${tituloSecao}</h3>
+                <a href="./produto-adicionar.html" class="botao botao1--azul1">Adicionar Produto</a>
+            </div>
+            <ul class="produtos__lista" data-produto-lista="${secao}">
+                
+            </ul>
+        </section>
+    `;
+
+    elementoSecaoProdutos.append(template);
+}
+
 const listarProdutos = (produtos, secao, quantidadeMaxItens) => { // sessão pode estar vazia
     const elementoSecaoProdutos = $('[data-produtos]');
     const quantidadeProdutos = produtos.length;
@@ -59,25 +98,27 @@ const listarProdutos = (produtos, secao, quantidadeMaxItens) => { // sessão pod
 
 }
 
-const criarNovaSecao = (secao, tituloSecao, categoria) => {
+const listarProdutosControle = (produtos, secao) => { // sessão pode estar vazia
     const elementoSecaoProdutos = $('[data-produtos]');
+    const quantidadeProdutos = produtos.length;
 
-    const template = `
-        <section class="produtos__secao">
-            <div class="produtos__secao__cabecalho">
-                <h3 class="produtos__secao__titulo" data-produtos-secao-titulo>${tituloSecao}</h3>
-                <a href="./produtos-todos.html?categoria=${categoria}" class="produtos__secao__link">
-                    Ver tudo
-                    <img src="../assets/img/Vector-seta-direita.svg" alt="Seta para direita" class="produtos__secao__img" loading="lazy">
-                </a>
-            </div>
-            <ul class="produtos__lista" data-produto-lista="${secao}">
-                
-            </ul>
-        </section>
-    `;
+    if(quantidadeProdutos > 0){
+        produtos.forEach(produto => {
+            criarItemProdutoControle( 
+                produto.id,
+                produto.nome,
+                produto.categoria,
+                produto.valor,
+                produto.img,
+                secao
+            );
+        });
+    }
+    else{
+        elementoSecaoProdutos.append(criarTemplateSemResultadosPesquisa());
+        voltarPagina();
+    }
 
-    elementoSecaoProdutos.append(template);
 }
 
 const criarNovoItem = (id, nome, categoria, valor, img, secao) => {
@@ -108,6 +149,33 @@ const criarNovoItem = (id, nome, categoria, valor, img, secao) => {
 
 }
 
+const criarItemProdutoControle = (id, nome, categoria, valor, img, secao) => {
+    const elementoLista = $('[data-produto-lista]');
+
+    const template = `
+        <li class="produtos__item" data-produto-id=${id}>
+            <div class="produtos__cabecalho">
+                <img src="${img}" alt="Foto do produto" class="produtos__img" loading="lazy">
+                <div class="produtos__menu">
+                    <button class="produtos__botao">
+                        <img src="../assets/img/Vector-lixeira.svg" alt="Ícone para excluir um produto" class="produtos__lixeira produtos__menu__img" data-icon-lixeira loading="lazy">
+                    </button>
+                    <a href="./produto-editar.html?id=${id}" class="produtos__link">
+                        <img src="../assets/img/Vector-lapis.svg" alt="Ícone para editar um produto" class="produtos__lapis produtos__menu__img" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="produtos__conteudo">
+                <h6 class="produtos__nome">${nome}</h6>
+                <p class="produtos__valor">R$ <span>${valor}</span></p>
+                <p class="produtos__id">#${id}</p>
+            </div>
+        </li>
+    `;
+
+    elementoLista.append(template);
+}
+
 const criarTemplateDetalheProduto = (id, nome, valor, img, descricao) =>{
     const elementoDetalhaPdoruto = $('[data-descricao-produto]');
     const template = `
@@ -129,8 +197,12 @@ const criarTemplateDetalheProduto = (id, nome, valor, img, descricao) =>{
 
 export const templateProdutosController = {
     encontraItemPeloId,
+    voltarPagina,
     listarProdutos,
+    listarProdutosControle,
     criarNovaSecao,
+    criarNovaSecaoControle,
     criarNovoItem,
+    criarItemProdutoControle,
     criarTemplateDetalheProduto
 }

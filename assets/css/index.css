@@ -10,6 +10,10 @@
     grid-template-rows: 352px auto;
 }
 
+.produtos__secao__link{
+    display: flex;
+}
+
 .ver-todos-produtos{
     height: 5rem;
     text-align: center;

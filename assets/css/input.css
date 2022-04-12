@@ -35,6 +35,7 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    row-gap: .8rem;
     justify-content: space-between;
     margin: 1rem 0 2rem;
     font-weight: 400;
